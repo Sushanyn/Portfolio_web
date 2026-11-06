@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-color: 12 12 12; /* #0C0C0C */
+    --text-color: 215 226 234; /* #D7E2EA */
+    --accent-color: 168 85 247; /* #a855f7 */
+    --accent-light: 216 180 254; /* #d8b4fe */
+    
+    --card-bg: 20 20 24;
+    --btn-primary-bg: 215 226 234;
+    --btn-primary-text: 12 12 12;
+    --btn-primary-hover-bg: 168 85 247;
+    --btn-primary-hover-text: 255 255 255;
+
+    --hire-fill-hover: var(--accent-color);
+    --hire-stroke-hover: 255 255 255;
+    
+    background-color: rgb(var(--bg-color));
+    color: rgb(var(--text-color));
+  }
+
+  /* Cool beige/olive theme */
+  .theme-olive {
+    --bg-color: 245 241 234; /* #F5F1EA beige */
+    --text-color: 44 53 37; /* #2C3525 olive green */
+    --accent-color: 147 178 124; /* #93B27C user requested olive */
+    --accent-light: 225 235 214; /* #E1EBD6 even lighter */
+    
+    --card-bg: 255 255 255;
+    --btn-primary-bg: 44 53 37;
+    --btn-primary-text: 245 241 234;
+    --btn-primary-hover-bg: 147 178 124;
+    --btn-primary-hover-text: 44 53 37;
+
+    --hire-fill-hover: var(--accent-color); /* Olive fill */
+    --hire-stroke-hover: var(--text-color); /* Dark olive stroke */
+  }
+
+  html, body, #root {
+    @apply h-full;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Adjust selection text color based on theme to ensure contrast */
+  ::selection {
+    background-color: rgb(var(--accent-color) / 0.8);
+    color: rgb(var(--bg-color));
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--bg-color));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--accent-color) / 0.7);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--accent-color));
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--accent-color) / 0.7) rgb(var(--bg-color));
+  }
+}
+
+@layer components {
+  .btn-card-action {
+    background-color: rgb(var(--btn-primary-bg));
+    color: rgb(var(--btn-primary-text));
+    border: 1px solid rgb(var(--btn-primary-bg) / 0.25);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn-card-action:hover {
+    background-color: rgb(var(--btn-primary-hover-bg));
+    color: rgb(var(--btn-primary-hover-text));
+    border-color: rgb(var(--btn-primary-hover-bg));
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px -5px rgb(var(--btn-primary-hover-bg) / 0.45);
+  }
+}
+
+@layer utilities {
+  .hero-heading {
+    background: linear-gradient(180deg, rgb(var(--text-color) / 0.5) 0%, rgb(var(--text-color)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
