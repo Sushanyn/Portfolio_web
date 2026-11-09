@@ -16,7 +16,7 @@ const NAV_IDS = [
 ];
 
 const SOCIAL_LINKS = [
-  { name: 'GitHub', url: 'https://github.com/JACK' },
+  { name: 'GitHub', url: 'https://github.com/VS JACK' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/sushanyn/' },
   { name: 'Instagram', url: 'https://www.instagram.com/nynahsus' },
 ];
@@ -186,7 +186,7 @@ export function Navbar() {
             className="flex items-center gap-1.5 group active:scale-95 transition-transform"
           >
             <span className="font-extrabold text-xs sm:text-sm tracking-widest uppercase text-foreground">
-              JACK
+              VS JACK
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-accent" />
           </a>
@@ -230,7 +230,7 @@ export function Navbar() {
             <div className="w-full flex items-center justify-between pb-5 border-b border-foreground/10">
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-sm sm:text-base tracking-widest uppercase text-foreground">
-                  JACK
+                  VS JACK
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
               </div>
