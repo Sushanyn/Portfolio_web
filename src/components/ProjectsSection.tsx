@@ -270,7 +270,7 @@ function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
 
           {/* Floating Companion (Phone or Tablet) */}
           <div className="absolute right-2 sm:right-6 lg:right-10 bottom-2 sm:bottom-6 lg:bottom-8 z-20 transition-transform duration-500 group-hover/canvas:-translate-y-2 group-hover/canvas:translate-x-1">
-            {project.companionType === "phone" ? (
+            {project.companionType === "tablet" ? (
               <AppleTabletFrame
                 src={project.companionImg}
                 alt={`${project.client} iPad preview`}
