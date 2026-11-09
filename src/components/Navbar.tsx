@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ThemeToggle } from './ThemeToggle';
 import { LanguageSwitcher, LANGUAGES } from './LanguageSwitcher';
+import { changeAppLanguage } from '../i18n';
 import { useTheme } from '../hooks/useTheme';
 import { X, ArrowUpRight, Sun, Moon } from 'lucide-react';
 
@@ -308,7 +309,7 @@ export function Navbar() {
                       <button
                         key={lang.code}
                         onClick={() => {
-                          i18n.changeLanguage(lang.code);
+                          changeAppLanguage(lang.code);
                         }}
                         className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 flex items-center gap-1.5 ${
                           isCurrent

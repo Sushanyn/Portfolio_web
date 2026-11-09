@@ -46,6 +46,14 @@
     box-sizing: border-box;
   }
 
+  #root {
+    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html.lang-transitioning #root {
+    opacity: 0.35;
+  }
+
   /* Adjust selection text color based on theme to ensure contrast */
   ::selection {
     background-color: rgb(var(--accent-color) / 0.8);
