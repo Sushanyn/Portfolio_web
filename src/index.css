@@ -76,13 +76,13 @@
 }
 
 @layer components {
-  .btn-card-action {
+  .btn-project {
     background-color: rgb(var(--btn-primary-bg));
     color: rgb(var(--btn-primary-text));
     border: 1px solid rgb(var(--btn-primary-bg) / 0.25);
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .btn-card-action:hover {
+  .btn-project:hover {
     background-color: rgb(var(--btn-primary-hover-bg));
     color: rgb(var(--btn-primary-hover-text));
     border-color: rgb(var(--btn-primary-hover-bg));

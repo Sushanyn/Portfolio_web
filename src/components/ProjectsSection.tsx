@@ -247,7 +247,7 @@ function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
               href={`https://${project.url}`}
               target="_blank"
               rel="noreferrer"
-              className="btn-card-action inline-flex items-center justify-center gap-2 sm:gap-2.5 w-full sm:w-auto px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider active:scale-95 shadow-md cursor-pointer"
+              className="btn-project inline-flex items-center justify-center gap-2 sm:gap-2.5 w-full sm:w-auto px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider active:scale-95 shadow-md cursor-pointer"
             >
               <span>Live Project</span>
               <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -258,7 +258,7 @@ function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
         </div>
 
         {/* Apple-style Showcase Canvas */}
-        <div className="relative w-full rounded-xl sm:rounded-3xl bg-foreground/[0.03] [.theme-olive_&]:bg-foreground/[0.04] border border-foreground/10 p-2.5 sm:p-8 lg:p-10 flex items-center justify-center min-h-[200px] xs:min-h-[240px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden group/canvas transition-colors duration-300">
+        <div className="relative w-full rounded-xl sm:rounded-3xl bg-foreground/[0.03] [.theme-olive_&]:bg-foreground/[0.04] border border-foreground/10 p-4 sm:p-8 lg:p-10 flex items-center justify-center min-h-[200px] xs:min-h-[240px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden group/canvas transition-colors duration-300">
           {/* Main Desktop Window */}
           <div className="w-full max-w-[95%] lg:max-w-[82%] -translate-x-1 sm:translate-x-0 -translate-y-1 sm:translate-y-0 transition-transform duration-500 group-hover/canvas:-translate-y-1">
             <AppleBrowserWindow
