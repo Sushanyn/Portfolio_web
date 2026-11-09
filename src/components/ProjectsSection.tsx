@@ -258,7 +258,7 @@ function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
         </div>
 
         {/* Apple-style Showcase Canvas */}
-        <div className="relative w-full rounded-xl sm:rounded-3xl bg-foreground/[0.03] [.theme-olive_&]:bg-foreground/[0.04] border border-foreground/10 p-4 sm:p-8 lg:p-10 flex items-center justify-center min-h-[200px] xs:min-h-[240px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden group/canvas transition-colors duration-300">
+        <div className="relative w-full rounded-xl sm:rounded-3xl bg-foreground/[0.03] [.theme-olive_&]:bg-foreground/[0.04] border border-foreground/10 p-2.5 sm:p-8 lg:p-10 flex items-center justify-center min-h-[200px] xs:min-h-[240px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden group/canvas transition-colors duration-300">
           {/* Main Desktop Window */}
           <div className="w-full max-w-[95%] lg:max-w-[82%] -translate-x-1 sm:translate-x-0 -translate-y-1 sm:translate-y-0 transition-transform duration-500 group-hover/canvas:-translate-y-1">
             <AppleBrowserWindow
